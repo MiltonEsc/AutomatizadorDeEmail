@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEMPLATE PDF</title>
+
+</head>
+
+<style type="text/css">
+
+.wrapper {
+    width: 600px;
+    height: 800px;
+    margin:0 auto;
+    /* background-image: url(https://superbrix.com/images/image.png); */
+    background-size: cover;
+}
+.container{
+    width: 340px;
+    height: 474px;
+}
+#fondo{
+    margin: 0 auto;
+    width: 800px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+</style>
+<html>
+    <body style="margin: 0px; padding: 0px;">
+        <div id="contenedor"class="wrapper">
+            <img id="fondo" src="https://superbrix.com/images/image.png" alt="" srcset="">
+            <div class="container"> 
+                <h4 style="text-align: center; margin-bottom: 2px;  color: #b45f06">¡Feliz Cumpleaños!</h4>
+                <p style="text-align: center; margin-top: 0; "><strong>Hoy [FECHA]</strong></p>
+                <div class="foto">
+                    <img src="https://superbrix.com/images/image.png" width="140" height="140"style="text-align: center; margin:0 auto;" alt="" srcset="">
+                </div>
+                <h4 style="text-align: center; margin-top: 2px; margin-bottom: 2px; font-size: 18px; color: #b45f06">[TO_NAME]</h4>
+                    
+                <p style="text-align: center; margin-bottom: 2px; "><strong>[CARGO]</strong></p>
+                <p style="text-align: center; margin-top: 2px; "><strong>Exten. [EXTEN]</strong></p>
+                <p style="text-align: center;">A nombre de nuestra gran familia empresarial, le enviamos un saludo muy especial deseándole un <strong>Feliz Cumpleaños</strong>. Queremos expresar el afecto y admiración que sentimos hacia usted.</p>
+            </div>          
+        </div>
+        <div id="contenedorCanvas" style="border: 1px solid red;">
+        </div>
+        <button id="btnCapturar">Tomar captura</button>
+        <script src="html2canvas.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
